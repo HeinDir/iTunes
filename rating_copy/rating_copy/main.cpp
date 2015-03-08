@@ -17,9 +17,9 @@
 
 #import "iTunes.h"
 
-NSString * cFromXML = @"/Users/hein/Projects/temp/from.xml";
-NSString * cToXML = @"/Users/hein/Projects/temp/to.xml";
-NSString * cNewXML = @"/Users/hein/Projects/temp/new.xml";
+NSString * cFromXML = @"/Users/hein/Developer/temp/from.xml";
+//NSString * cToXML = @"/Users/hein/Projects/temp/to.xml";
+//NSString * cNewXML = @"/Users/hein/Projects/temp/new.xml";
 
 #define SHOW_LOG 0
 #define SHOW_ERROR 0
@@ -162,7 +162,7 @@ int main(int argc, const char * argv[])
 	// Scripting iTunes application
 	iTunesApplication *iTunes = [SBApplication applicationWithBundleIdentifier:@"com.apple.iTunes"];
 	
-	// run ti if not runing
+	// run it if not runing
 	bool itunes_runing = [iTunes isRunning];
 	if (!itunes_runing)
 		[iTunes run];
